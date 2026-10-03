@@ -380,7 +380,16 @@
             color: #e0f2fe;
             font-size: 0.85rem;
         }
-    </style>
+    
+    /* App Layout Responsive */
+    @media (max-width: 768px) {
+        .navbar .container { flex-direction: column; gap: 1rem; }
+        .nav-links { flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .footer-grid { grid-template-columns: 1fr !important; gap: 2rem !important; text-align: center; }
+        .footer-logo { margin: 0 auto 1rem auto !important; justify-content: center; }
+        .social-links { justify-content: center; }
+    }
+</style>
     @stack('styles')
 </head>
 <body>
@@ -565,4 +574,5 @@ document.addEventListener('DOMContentLoaded', function () {
 @stack('scripts')
 </body>
 </html>
+
 
